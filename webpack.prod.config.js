@@ -52,7 +52,7 @@ module.exports = {
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
-      template: 'app/markup/bootstrap-prod.html'
+      template: 'app/markup/bootstrap-example.html'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')

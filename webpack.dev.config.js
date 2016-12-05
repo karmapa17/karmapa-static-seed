@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: './app/markup/bootstrap-dev.html'
+      template: './app/markup/bootstrap-example.html'
     }),
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({

@@ -1,5 +1,5 @@
 if ('production' !== process.env.NODE_ENV) {
-  require('./../markup/bootstrap-dev.html');
+  require('./../markup/bootstrap-example.html');
 }
 
 const $ = require('jquery');
