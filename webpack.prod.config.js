@@ -54,6 +54,9 @@ module.exports = {
         test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
         loader: 'file',
       },
+      {
+        test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192',
+      },
 
       { test: /\.html$/, loader: 'html-loader' },
 
