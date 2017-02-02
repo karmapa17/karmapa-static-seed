@@ -4,9 +4,9 @@
   "description": "靜態網站樣板",
   "main": "",
   "scripts": {
-    "start": "BOOTSTRAPRC_LOCATION=./.bootstraprc-4-example webpack-dev-server --port 4000 --config webpack.dev.config.js",
+    "start": "webpack-dev-server --port 4000 --config webpack.dev.config.js",
     "clean": "rm -rf public/",
-    "prod": "npm run clean && BOOTSTRAPRC_LOCATION=./.bootstraprc-4-example webpack -p --config webpack.prod.config.js"
+    "prod": "npm run clean && webpack -p --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
