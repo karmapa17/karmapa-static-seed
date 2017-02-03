@@ -33,6 +33,8 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './app/markup/bootstrap-example.html',
+      filename: 'index.html',
+      chunks: ['bs3'],
     }),
     new webpack.NoErrorsPlugin(),
   ],

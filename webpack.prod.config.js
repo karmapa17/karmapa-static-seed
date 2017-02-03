@@ -33,6 +33,8 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
       template: 'app/markup/bootstrap-example.html',
+      filename: 'index.html',
+      chunks: ['bs3'],
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
